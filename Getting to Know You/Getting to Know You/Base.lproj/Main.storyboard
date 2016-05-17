@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Getting_to_Know_You" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-BV-pKz">
+                                <rect key="frame" x="240" y="482" width="121" height="30"/>
+                                <state key="normal" title="Change the Color">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNz-3t-QjE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dY-iY-7xg">
+                                <rect key="frame" x="271" y="212" width="59" height="28"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="5dY-iY-7xg" secondAttribute="centerY" constant="74" id="1Ci-32-3rE"/>
+                            <constraint firstAttribute="centerY" secondItem="kwn-BV-pKz" secondAttribute="centerY" constant="-197" id="2Ug-Uw-lTh"/>
+                            <constraint firstAttribute="centerY" secondItem="kwn-BV-pKz" secondAttribute="centerY" constant="-197" id="5jz-ve-Zr5"/>
+                            <constraint firstItem="kwn-BV-pKz" firstAttribute="centerX" secondItem="5dY-iY-7xg" secondAttribute="centerX" id="AZ1-Pv-rME"/>
+                            <constraint firstAttribute="centerX" secondItem="5dY-iY-7xg" secondAttribute="centerX" constant="-0.5" id="CGO-zq-FZ6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kwn-BV-pKz" secondAttribute="bottom" constant="88" id="HYY-gg-BjZ"/>
+                            <constraint firstAttribute="centerY" secondItem="kwn-BV-pKz" secondAttribute="centerY" constant="-197" id="Nfv-ye-wGR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="5dY-iY-7xg" id="Plt-A5-VR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="268"/>
+        </scene>
+    </scenes>
+</document>
